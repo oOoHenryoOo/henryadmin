@@ -50,6 +50,10 @@ public class SCrop implements Serializable {
     @Column(name = "nt")
     private String nt;
 
+    // 备注2
+    @Column(name = "nt2")
+    private String nt2;
+
     public void copy(SCrop source){
         BeanUtil.copyProperties(source,this, CopyOptions.create().setIgnoreNullValue(true));
     }
